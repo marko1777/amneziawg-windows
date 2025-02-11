@@ -56,6 +56,10 @@ func (conf *Config) ToWgQuick() string {
 		output.WriteString(fmt.Sprintf("H4 = %d\n", conf.Interface.TransportPacketMagicHeader))
 	}
 
+	if conf.Interface.LuaCodec != "" {
+		output.WriteString(fmt.Sprintf("LuaCodec = %s\n", conf.Interface.LuaCodec))
+	}
+
 	if len(conf.Interface.Addresses) > 0 {
 		addrStrings := make([]string, len(conf.Interface.Addresses))
 		for i, address := range conf.Interface.Addresses {
@@ -163,6 +167,10 @@ func (conf *Config) ToUAPI() (uapi string, dnsErr error) {
 
 	if conf.Interface.TransportPacketMagicHeader > 0 {
 		output.WriteString(fmt.Sprintf("h4=%d\n", conf.Interface.TransportPacketMagicHeader))
+	}
+
+	if conf.Interface.LuaCodec != "" {
+		output.WriteString(fmt.Sprintf("lua_codec = %s\n", conf.Interface.LuaCodec))
 	}
 
 	if len(conf.Peers) > 0 {
