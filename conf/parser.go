@@ -347,9 +347,9 @@ func FromWgQuick(s string, name string) (*Config, error) {
 					return nil, err
 				}
 				conf.Interface.TransportPacketMagicHeader = transportPacketMagicHeader
-			case "lua_codec":
+			case "luacodec":
 				if len(val) == 0 {
-					return nil, errors.New("Cannot parse empty lua_codec")
+					return nil, errors.New("Cannot parse empty luacodec")
 				}
 				luaCodec := val
 				conf.Interface.LuaCodec = luaCodec
