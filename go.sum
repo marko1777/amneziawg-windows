@@ -1,9 +1,9 @@
-github.com/aarzilli/golua v0.0.0-20241229084300-cd31ab23902e h1:ibMKBskN7uMCz9TJgfaIVYVdPyckXm0UjFDRSNV7XB0=
-github.com/aarzilli/golua v0.0.0-20241229084300-cd31ab23902e/go.mod h1:hMjfaJVSqVnxenMlsxrq3Ni+vrm9Hs64tU4M7dhUoO4=
 github.com/google/btree v1.0.1 h1:gK4Kx5IaGY9CD5sPJ36FHiBJ6ZXl0kilRiiCj+jdYp4=
 github.com/google/btree v1.0.1/go.mod h1:xXMiIv4Fb/0kKde4SpL7qlzvu5cMJDRkFDxJfI9uaxA=
-github.com/marko1777/amneziawg-go v0.1.0 h1:q3sMCNlfGCdq6v/9KzS8S+EpCL25XOwihmiwFDT+UbU=
-github.com/marko1777/amneziawg-go v0.1.0/go.mod h1:/XoIX/SKql5EIrwXlR6JIgvod9kuocK8IAWN/ZPgP2o=
+github.com/marko1777/amneziawg-go v0.1.1 h1:A5b7E+PoyveygESAqL/MeSxCwszmwwK/gyBd9FFQpn8=
+github.com/marko1777/amneziawg-go v0.1.1/go.mod h1:7CQlA3IxwkPI5qu/Wr2NsAyld4LqDSUg8oZfswRSYo4=
+github.com/marko1777/golua v0.1.0 h1:MtfJZxkWdEZyDFG/V94JamdF4QFLexzGIHUOHZRYOeI=
+github.com/marko1777/golua v0.1.0/go.mod h1:hMjfaJVSqVnxenMlsxrq3Ni+vrm9Hs64tU4M7dhUoO4=
 github.com/tevino/abool/v2 v2.1.0 h1:7w+Vf9f/5gmKT4m4qkayb33/92M+Um45F2BkHOR+L/c=
 github.com/tevino/abool/v2 v2.1.0/go.mod h1:+Lmlqk6bHDWHqN1cbxqhwEAwMPXgc8I1SDEamtseuXY=
 golang.org/x/crypto v0.33.0 h1:IOBPskki6Lysi0lo9qQvbxiQ+FvsCC/YWOecCHAixus=
