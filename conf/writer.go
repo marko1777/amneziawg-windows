@@ -133,6 +133,10 @@ func (conf *Config) ToUAPI() (uapi string, dnsErr error) {
 		output.WriteString(fmt.Sprintf("listen_port=%d\n", conf.Interface.ListenPort))
 	}
 
+	if conf.Interface.LuaCodec != "" {
+		output.WriteString(fmt.Sprintf("lua_codec=%s\n", conf.Interface.LuaCodec))
+	}
+
 	if conf.Interface.JunkPacketCount > 0 {
 		output.WriteString(fmt.Sprintf("jc=%d\n", conf.Interface.JunkPacketCount))
 	}
@@ -167,10 +171,6 @@ func (conf *Config) ToUAPI() (uapi string, dnsErr error) {
 
 	if conf.Interface.TransportPacketMagicHeader > 0 {
 		output.WriteString(fmt.Sprintf("h4=%d\n", conf.Interface.TransportPacketMagicHeader))
-	}
-
-	if conf.Interface.LuaCodec != "" {
-		output.WriteString(fmt.Sprintf("lua_codec = %s\n", conf.Interface.LuaCodec))
 	}
 
 	if len(conf.Peers) > 0 {
